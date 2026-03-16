@@ -12,7 +12,7 @@ cv:
         start_date: 2025
         end_date: present
         highlights:
-          - Researches the impact of digital transformation and AI adoption on decision-making and performance across organizations, markets, and individuals using econometric and empirical methods.
+          - "Researches the impact of digital transformation and AI adoption on decision-making and performance across organizations, markets, and individuals using econometric and empirical methods."
 
     Education:
       - institution: Yonsei University
@@ -20,9 +20,9 @@ cv:
         area: Information Systems
         studyType: PhD
         start_date: 2025
-        end_date: 2029
+        end_date: present
         highlights:
-          - Advisor: Namil Kim
+          - "Advisor: Namil Kim"
 
       - institution: University of Warwick
         location: Coventry, UK
@@ -40,20 +40,20 @@ cv:
 
     Awards:
       - title: Best Paper Award
-        date: 2025-11
+        date: 2025
         awarder: The Korea Society of Management Information Systems
-        summary: ""
 
       - title: Admission Scholarship Award
-        date: 2022-01
+        date: 2022
         awarder: University of Warwick
-        summary: ""
 
     Skills:
       - name: Programming
-        level: ""
-        keywords: Python, R, SPSS
+        keywords:
+          - Python
+          - R
 
       - name: Languages
-        level: ""
-        keywords: Korean (Native), English (Fluent)
+        keywords:
+          - Korean (Native)
+          - English (Fluent)
