@@ -6,7 +6,7 @@ subtitle: <a href='https://www.yonsei.ac.kr'>Yonsei University</a>. PhD Student.
 
 profile:
   align: right
-  image: graduation_celemony.png
+  image: graduation_ceremony.png
   image_circular: false
   more_info: >
     <p>Yonsei University</p>
