@@ -26,5 +26,8 @@ latest_posts:
 ---
 
 <div style="max-width: 520px; margin-top: 8px;">
-I am a quantitative IS researcher who applies econometric methods to examine how AI reshapes human decision-making, Human-AI Collaboration, and skill distribution — and how AI agents reshape information ecosystems.
+I am an empirical information systems researcher who applies econometric methods to study: 
+  * How AI reshapes Human Decision-making
+  * Human-AI Collaboration
+  * AI Agents & Information Ecosystems
 </div>
