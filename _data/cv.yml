@@ -1,50 +1,59 @@
 cv:
   name: Haewon Sim
   location: Seoul, Korea
-  email: haewon.sim@yonsei.ac.kr
+  email: haileysim1219@gmail.com
   website: https://haewon-sim.github.io
 
   sections:
+    Experience:
+      - company: Digital Innovation and Technology Management Lab, Yonsei University
+        position: Researcher
+        location: Seoul, Korea
+        start_date: 2025
+        end_date: present
+        highlights:
+          - Researches the impact of digital transformation and AI adoption on decision-making and performance across organizations, markets, and individuals using econometric and empirical methods.
+
     Education:
       - institution: Yonsei University
         location: Seoul, Korea
         area: Information Systems
         studyType: PhD
-        start_date: 2025-03
-        end_date: 2029-02
+        start_date: 2025
+        end_date: 2029
         highlights:
-          - "Advisor: Namil Kim"
+          - Advisor: Namil Kim
 
       - institution: University of Warwick
         location: Coventry, UK
         area: Management of Information Systems and Digital Innovation
         studyType: MSc
-        start_date: 2022-09
-        end_date: 2023-09
+        start_date: 2022
+        end_date: 2023
 
       - institution: Jeju National University
         location: Jeju, Korea
-        area: Business Administration and Political Science (double major)
+        area: Business Administration, Political Science (double major)
         studyType: BA
-        start_date: 2012-03
-        end_date: 2017-08
-
-    Experience:
-      - company: Digital Innovation and Technology Management Lab, Yonsei University
-        position: Research Assistant
-        location: Seoul, Korea
-        start_date: 2025-03
-        end_date: present
-        summary: Research assistant in digital innovation and technology management.
-        highlights:
-          - Research in information systems and digital innovation
+        start_date: 2012
+        end_date: 2017
 
     Awards:
-      - bullet: "Best Paper Award, The Korea Society of Management Information Systems, Nov 2025"
-      - bullet: "Admission Scholarship Award, University of Warwick, Jan 2022"
+      - title: Best Paper Award
+        date: 2025-11
+        awarder: The Korea Society of Management Information Systems
+        summary: ""
+
+      - title: Admission Scholarship Award
+        date: 2022-01
+        awarder: University of Warwick
+        summary: ""
 
     Skills:
-      - label: Programming
-        details: Python, R, SPSS
-      - label: Languages
-        details: Korean (Native), English (Fluent)
+      - name: Programming
+        level: ""
+        keywords: Python, R, SPSS
+
+      - name: Languages
+        level: ""
+        keywords: Korean (Native), English (Fluent)
