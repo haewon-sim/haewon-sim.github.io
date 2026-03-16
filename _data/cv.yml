@@ -1,2 +1,49 @@
 cv:
   name: Haewon Sim
+  location: Seoul, Korea
+  email: haewon.sim@yonsei.ac.kr
+  website: https://haewon-sim.github.io
+
+  social_networks:
+    - network: LinkedIn
+      username: your-linkedin-id
+    - network: GitHub
+      username: haewon-sim
+
+  sections:
+    education:
+      - institution: Yonsei University
+        area: Information Systems
+        degree: PhD
+        start_date: 2025-03
+        end_date: 2029-02
+        highlights:
+          - "Advisor: Namil Kim"
+
+      - institution: University of Warwick
+        area: Management of Information Systems and Digital Innovation
+        degree: MSc
+        start_date: 2022-09
+        end_date: 2023-09
+
+      - institution: Jeju National University
+        area: Business Administration and Political Science
+        degree: BA
+        start_date: 2012-03
+        end_date: 2017-08
+
+    experience:
+      - company: Digital Innovation and Technology Management Lab, Yonsei University
+        position: Research Assistant
+        start_date: 2025-03
+        end_date: present
+
+    awards:
+      - bullet: "Best Paper Award, The Korea Society of Management Information Systems, Nov 2025"
+      - bullet: "Admission Scholarship Award, University of Warwick, Jan 2022"
+
+    skills:
+      - label: Programming
+        details: Python, R, SPSS
+      - label: Languages
+        details: Korean (Native), English (Fluent)
