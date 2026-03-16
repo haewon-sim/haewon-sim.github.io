@@ -13,6 +13,8 @@ profiles:
     username: haewon-sim
   - network: linkedin
     username: haewonsim
+  - network: google_scholar
+    username: V4FskdUAAAAJ
 description: >
   Welcome to my website! My name is Haewon Sim.
   I am a PhD student in Information Systems at Yonsei University.
