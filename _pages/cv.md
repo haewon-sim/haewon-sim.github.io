@@ -32,10 +32,10 @@ Research Assistant, Mar 2025 – Present
 - Best Paper Award, The Korea Society of Management Information Systems, Nov 2025
 - Admission Scholarship Award, University of Warwick, Jan 2022
 
-
 ---
 
 ## Skills
 
 **Programming:** Python, R, SPSS
+
 **Languages:** Korean (Native), English (Fluent)
