@@ -1,28 +1,14 @@
 ---
-layout: profiles
-permalink: /people/
+layout: page
 title: personal
-description: members of the lab or group
+permalink: /personal/
 nav: true
-nav_order: 7
-
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+nav_order: 5
 ---
+
+Outside of research, I enjoy:
+
+* Trying new matcha cafes (matcha is my go-to for staying calm)
+* Traveling around the world (next destinations this year: Indonesia and Portugal)
+* Running my own YouTube channel @odimilk1106
+* Exploring spicy food (I can handle buldak noodles, hotpot, Thai chilies)
