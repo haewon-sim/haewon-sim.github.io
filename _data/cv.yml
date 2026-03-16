@@ -1,10 +1,7 @@
 cv:
   name: Haewon Sim
-  label: PhD Student in Information Systems
-  email: haewon.sim@yonsei.ac.kr
   location: Seoul, Korea
-  image: ""
-  summary: ""
+  email: haewon.sim@yonsei.ac.kr
 
   sections:
     Education:
@@ -15,7 +12,7 @@ cv:
         studyType: PhD
         start_date: 2025-03
         end_date: 2029-02
-        courses: "Econometric Modeling, AI in Business, Stochastic Model Analysis"
+        courses: "Quantitative Analysis for Empirical Research, Econometric Modeling, AI in Business, Stochastic Model Analysis"
         highlights:
           - "Advisor: Namil Kim"
 
@@ -42,15 +39,6 @@ cv:
         start_date: 2025-03
         end_date: present
 
-    Awards:
-      - title: Best Paper Award
-        date: 2025-11
-        awarder: The Korea Society of Management Information Systems
-
-      - title: Admission Scholarship Award
-        date: 2022-01
-        awarder: University of Warwick
-
     Publications:
       - title: "The Impact of Generative AI on User Behavior in Q&A Platforms: A Focus on Utilitarian Information Seeking"
         authors:
@@ -59,6 +47,18 @@ cv:
         publisher: Information Systems Review
         releaseDate: 2025-11
         url: https://doi.org/10.14329/isr.2025.27.4.443
+
+      - title: "Best Paper Award"
+        authors:
+          - The Korea Society of Management Information Systems
+        publisher: Award
+        releaseDate: 2025-11
+
+      - title: "Admission Scholarship Award"
+        authors:
+          - University of Warwick
+        publisher: Scholarship
+        releaseDate: 2022-01
 
     Certificates:
       - name: ADSP (Advanced Data Analytics Semi-Professional)
