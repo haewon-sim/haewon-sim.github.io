@@ -32,12 +32,6 @@ Research Assistant, Mar 2025 – Present
 - Best Paper Award, The Korea Society of Management Information Systems, Nov 2025
 - Admission Scholarship Award, University of Warwick, Jan 2022
 
----
-
-## Certifications
-
-- ADSP (Advanced Data Analytics Semi-Professional), Korea Data Agency, Nov 2024
-- ITIL® 4, Axelos, Oct 2023
 
 ---
 
