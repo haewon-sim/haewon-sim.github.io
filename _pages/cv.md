@@ -1,12 +1,100 @@
----
-layout: cv
-permalink: /cv/
-title: CV
-nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
----
+{
+  "basics": {
+    "name": "Haewon Sim",
+    "label": "PhD Student in Information Systems",
+    "email": "haewon.sim@yonsei.ac.kr",
+    "phone": "+821055031881",
+    "url": "https://haewon-sim.github.io",
+    "summary": "I study the economics of AI, platform economics, and human-AI interaction.",
+    "location": {
+      "address": "50 Yonsei-ro, Seodaemun-gu",
+      "city": "Seoul",
+      "countryCode": "KR"
+    }
+  },
+  "education": [
+    {
+      "institution": "Yonsei University",
+      "location": "Seoul, Korea",
+      "area": "Information Systems",
+      "studyType": "PhD",
+      "startDate": "2025-03",
+      "endDate": "2029-02",
+      "score": "",
+      "courses": ["Advisor: Namil Kim"]
+    },
+    {
+      "institution": "University of Warwick",
+      "location": "Coventry, UK",
+      "area": "Management of Information Systems and Digital Innovation",
+      "studyType": "MSc",
+      "startDate": "2022-09",
+      "endDate": "2023-09",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Jeju National University",
+      "location": "Jeju, Korea",
+      "area": "Business Administration, Political Science (double major)",
+      "studyType": "BA",
+      "startDate": "2012-03",
+      "endDate": "2017-08",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "work": [
+    {
+      "name": "Digital Innovation and Technology Management Lab, Yonsei University",
+      "position": "Research Assistant",
+      "startDate": "2025-03",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Paper Award",
+      "date": "2025-11",
+      "awarder": "The Korea Society of Management Information Systems",
+      "summary": ""
+    },
+    {
+      "title": "Admission Scholarship Award",
+      "date": "2022-01",
+      "awarder": "University of Warwick",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "ADSP (Advanced Data Analytics Semi-Professional)",
+      "date": "2024-11",
+      "issuer": "Korea Data Agency",
+      "url": ""
+    }
+  ]
+  "skills": [
+    {
+      "name": "Data Analysis",
+      "level": "",
+      "keywords": ["Python", "R"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Korean",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "volunteer": []
+}
