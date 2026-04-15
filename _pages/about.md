@@ -26,7 +26,7 @@ latest_posts:
 ---
 
 <div style="max-width: 520px; margin-top: 8px;">
-  <p>I am an empirical researcher in Information Systems who applies econometric methods to examine:</p>
+  <p>I am an empirical researcher in Information Systems who applies econometric methods to study:</p>
   <ul>
     <li>How AI reshapes human decision-making</li>
     <li>Human–AI collaboration</li>
