@@ -1,13 +1,9 @@
-- title: "2025 Best Paper Award (1st place)"
-  date: "2025.11.01"
-  caption: "The Korea Society of Management Information Systems"
-  images:
-    - "/assets/img/2025_award.jpeg"
-    - "/assets/img/2025_award_2.jpeg"
-
 - title: "2026 Best Paper Award"
   date: "2026"
   caption: "Spring Information Systems Academic Conference"
-  images:
-    - "/assets/img/2026_award.jpeg"
-    - "/assets/img/2026_award_2.jpeg"
+  image: "/assets/img/2026_award.jpeg"
+  
+- title: "2025 Best Paper Award (1st place)"
+  date: "2025.11.01"
+  caption: "The Korea Society of Management Information Systems"
+  image: "/assets/img/2025_award.jpeg"
