@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 사진첩
-description: 활동 사진
+title: gallery
+description: My PhD Student Journey 📝
 permalink: /gallery/
 nav: true
 nav_order: 6
@@ -10,8 +10,7 @@ body_class: gallery-page
 
 <section class="page-hero">
   <div class="container">
-    <h1>Gallery</h1>
-    <p>My PhD Student Journey 📝</p>
+
   </div>
 </section>
 
