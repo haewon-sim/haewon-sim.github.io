@@ -23,11 +23,13 @@ nav_order: 6
     background: var(--global-bg-color);
     color: var(--global-text-color);
     text-decoration: none;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
   }
 
   .gallery-card:hover {
     text-decoration: none;
     transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   }
 
   .gallery-thumb {
@@ -63,12 +65,7 @@ nav_order: 6
   .gallery-caption {
     font-size: 0.95rem;
     line-height: 1.45;
-    margin-bottom: 8px;
-  }
-
-  .gallery-count {
-    font-size: 0.85rem;
-    color: var(--global-theme-color);
+    margin-bottom: 0;
   }
 
   @media (max-width: 768px) {
@@ -81,9 +78,11 @@ nav_order: 6
 {% if site.data.gallery and site.data.gallery.size > 0 %}
 <div class="gallery-grid">
   {% for item in site.data.gallery %}
-  <a class="gallery-card" href="{{ item.images[0] | relative_url }}">
+  <a class="gallery-card" href="{{ item.image | relative_url }}">
     <div class="gallery-thumb">
-      <img src="{{ item.images[0] | relative_url }}" alt="{{ item.title | escape }}" loading="lazy">
+      <img src="{{ item.image | relative_url }}"
+           alt="{{ item.title | escape }}"
+           loading="lazy">
     </div>
 
     <div class="gallery-info">
@@ -95,10 +94,6 @@ nav_order: 6
 
       {% if item.caption %}
       <div class="gallery-caption">{{ item.caption }}</div>
-      {% endif %}
-
-      {% if item.images and item.images.size > 1 %}
-      <div class="gallery-count">{{ item.images.size }} photos</div>
       {% endif %}
     </div>
   </a>
