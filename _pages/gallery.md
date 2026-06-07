@@ -1,6 +1,6 @@
 ---
 layout: page
-title: gallery
+title: Gallery
 description: My PhD Student Journey 📝
 permalink: /gallery/
 nav: true
@@ -8,93 +8,94 @@ nav_order: 6
 body_class: gallery-page
 ---
 
-<section class="section section--alt">
-  <div class="container">
-    {% if site.data.gallery and site.data.gallery.size > 0 %}
-    <div class="gallery-grid" aria-label="Photo list">
-      {% for item in site.data.gallery %}
-      <article class="gallery-post">
-        <a class="gallery-item js-gallery-open"
-           href="{{ item.images[0] | relative_url }}"
-           data-gallery-index="{{ forloop.index0 }}"
-           data-no-save>
-          <div class="gallery-thumb" aria-hidden="true">
-            <img class="no-save"
-                 src="{{ item.images[0] | relative_url }}"
-                 alt="{{ item.title | escape }}"
-                 loading="lazy"
-                 draggable="false" />
-          </div>
+<style>
+  .gallery-page .gallery-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
 
-          <div class="gallery-meta">
-            <div class="gallery-title">{{ item.title }}</div>
+  .gallery-page .gallery-post {
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 3rem;
+  }
 
-            {% if item.date %}
-            <div class="gallery-date">{{ item.date }}</div>
-            {% endif %}
+  .gallery-page .gallery-post:last-child {
+    border-bottom: none;
+  }
 
-            {% if item.caption %}
-            <div class="gallery-caption">{{ item.caption }}</div>
-            {% endif %}
+  .gallery-page .gallery-post-title {
+    font-size: 1.65rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
 
-            {% if item.images and item.images.size > 1 %}
-            <div class="gallery-count">{{ item.images.size }} photos</div>
-            {% endif %}
-          </div>
-        </a>
-      </article>
+  .gallery-page .gallery-post-date {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.8rem;
+  }
+
+  .gallery-page .gallery-post-caption {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .gallery-page .gallery-post-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery-page .gallery-post-images a {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+  }
+
+  .gallery-page .gallery-post-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .gallery-page .gallery-post-images {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+{% if site.data.gallery and site.data.gallery.size > 0 %}
+<div class="gallery-post-list">
+  {% for item in site.data.gallery %}
+  <article class="gallery-post">
+    <h2 class="gallery-post-title">{{ item.title }}</h2>
+
+    {% if item.date %}
+    <div class="gallery-post-date">{{ item.date }}</div>
+    {% endif %}
+
+    {% if item.caption %}
+    <p class="gallery-post-caption">{{ item.caption }}</p>
+    {% endif %}
+
+    {% if item.images and item.images.size > 0 %}
+    <div class="gallery-post-images">
+      {% for image in item.images %}
+      <a href="{{ image | relative_url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ image | relative_url }}"
+             alt="{{ item.title | escape }}"
+             loading="lazy">
+      </a>
       {% endfor %}
     </div>
-    {% else %}
-    <p class="lead">No photos have been added yet. Add items to <code>_data/gallery.yml</code> to display them automatically.</p>
     {% endif %}
-  </div>
-</section>
-
-<script>
-  window.__siteGallery = {{ site.data.gallery | jsonify | replace: '</', '<\\/' }};
-</script>
-
-<div class="modal-backdrop" data-gallery-modal-backdrop hidden></div>
-
-<div class="modal"
-     data-gallery-modal
-     hidden
-     aria-hidden="true"
-     role="dialog"
-     aria-modal="true"
-     aria-labelledby="galleryModalTitle">
-  <div class="modal-card modal-card--gallery" role="document">
-    <button class="modal-close" type="button" data-gallery-modal-close aria-label="Close">×</button>
-
-    <div class="gallery-modal-body">
-      <div class="gallery-modal-media">
-        <img class="gallery-modal-img no-save"
-             data-gallery-modal-img
-             data-no-save
-             src=""
-             alt=""
-             draggable="false" />
-      </div>
-
-      <div class="gallery-modal-main">
-        <h2 class="modal-title" id="galleryModalTitle" data-gallery-modal-title>Photo</h2>
-        <p class="post-meta" data-gallery-modal-date></p>
-        <p class="gallery-caption" data-gallery-modal-caption></p>
-        <p class="gallery-count" data-gallery-modal-count></p>
-
-        <div class="gallery-modal-actions">
-          <button class="person-more gallery-nav-btn" type="button" data-gallery-prev>Previous photo</button>
-          <button class="person-more gallery-nav-btn" type="button" data-gallery-next>Next photo</button>
-          <a class="person-more gallery-open-original"
-             data-gallery-open-original
-             href="#"
-             target="_blank"
-             rel="noopener noreferrer">Open original</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  </article>
+  {% endfor %}
 </div>
-
-<script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
+{% else %}
+<p>No photos have been added yet. Add items to <code>_data/gallery.yml</code> to display them automatically.</p>
+{% endif %}
