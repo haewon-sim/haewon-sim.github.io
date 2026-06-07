@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/personal/";
           },
-        },{id: "nav-gallery",
-          title: "gallery",
-          description: "",
+        },{id: "nav-사진첩",
+          title: "사진첩",
+          description: "활동 사진",
           section: "Navigation",
           handler: () => {
             window.location.href = "/gallery/";
