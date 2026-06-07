@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageUrl = images[imageIndex];
 
     img.src = imageUrl;
-    img.alt = post.title || "사진";
+    img.alt = post.title || "Photo";
 
-    title.textContent = post.title || "사진";
+    title.textContent = post.title || "Photo";
     date.textContent = post.date || "";
     caption.textContent = post.caption || "";
     count.textContent = images.length > 1
