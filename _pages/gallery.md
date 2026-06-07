@@ -8,12 +8,6 @@ nav_order: 6
 body_class: gallery-page
 ---
 
-<section class="page-hero">
-  <div class="container">
-
-  </div>
-</section>
-
 <section class="section section--alt">
   <div class="container">
     {% if site.data.gallery and site.data.gallery.size > 0 %}
