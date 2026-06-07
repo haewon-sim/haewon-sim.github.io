@@ -1,33 +1,97 @@
 ---
 layout: page
-title: gallery
+title: 사진첩
+description: 활동 사진
 permalink: /gallery/
 nav: true
 nav_order: 6
+body_class: gallery-page
 ---
 
-## Photo Gallery
+<section class="page-hero">
+  <div class="container">
+    <h1>Gallery</h1>
+    <p>My PhD Student Journey 📝</p>
+  </div>
+</section>
 
-<div class="row">
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/1.jpg" alt="photo 1">
+<section class="section section--alt">
+  <div class="container">
+    {% if site.data.gallery and site.data.gallery.size > 0 %}
+    <div class="gallery-grid" aria-label="사진 목록">
+      {% for item in site.data.gallery %}
+      <a class="gallery-item js-gallery-open"
+         href="{{ item.image | relative_url }}"
+         data-gallery-index="{{ forloop.index0 }}"
+         data-no-save>
+        <div class="gallery-thumb" aria-hidden="true">
+          <img class="no-save"
+               src="{{ item.image | relative_url }}"
+               alt="{{ item.title | escape }}"
+               loading="lazy"
+               draggable="false" />
+        </div>
+        <div class="gallery-meta">
+          <div class="gallery-title">{{ item.title }}</div>
+          {% if item.date %}
+          <div class="gallery-date">{{ item.date }}</div>
+          {% endif %}
+          {% if item.caption %}
+          <div class="gallery-caption">{{ item.caption }}</div>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="lead">아직 등록된 사진이 없습니다. <code>_data/gallery.yml</code>에 항목을 추가하면 자동으로 표시됩니다.</p>
+    {% endif %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/2.jpg" alt="photo 2">
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/3.jpg" alt="photo 3">
+</section>
+
+<script>
+  window.__siteGallery = {{ site.data.gallery | jsonify | replace: '</', '<\\/' }};
+</script>
+
+<div class="modal-backdrop" data-gallery-modal-backdrop hidden></div>
+
+<div class="modal"
+     data-gallery-modal
+     hidden
+     aria-hidden="true"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="galleryModalTitle">
+  <div class="modal-card modal-card--gallery" role="document">
+    <button class="modal-close" type="button" data-gallery-modal-close aria-label="닫기">×</button>
+
+    <div class="gallery-modal-body">
+      <div class="gallery-modal-media">
+        <img class="gallery-modal-img no-save"
+             data-gallery-modal-img
+             data-no-save
+             src=""
+             alt=""
+             draggable="false" />
+      </div>
+
+      <div class="gallery-modal-main">
+        <h2 class="modal-title" id="galleryModalTitle" data-gallery-modal-title>사진</h2>
+        <p class="post-meta" data-gallery-modal-date></p>
+        <p class="gallery-caption" data-gallery-modal-caption></p>
+
+        <div class="gallery-modal-actions">
+          <button class="person-more gallery-nav-btn" type="button" data-gallery-prev>이전</button>
+          <button class="person-more gallery-nav-btn" type="button" data-gallery-next>다음</button>
+          <a class="person-more gallery-open-original"
+             data-gallery-open-original
+             href="#"
+             target="_blank"
+             rel="noopener noreferrer">원본 열기</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/4.jpg" alt="photo 4">
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/5.jpg" alt="photo 5">
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/6.jpg" alt="photo 6">
-  </div>
-</div>
+<script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
