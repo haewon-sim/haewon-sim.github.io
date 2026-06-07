@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/personal/";
           },
         },{id: "nav-gallery",
-          title: "Gallery",
+          title: "gallery",
           description: "My PhD Student Journey 📝",
           section: "Navigation",
           handler: () => {
