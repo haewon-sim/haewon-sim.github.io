@@ -1,6 +1,6 @@
 ---
 layout: page
-title: gallery
+title: Gallery
 description: My PhD Student Journey 📝
 permalink: /gallery/
 nav: true
@@ -11,7 +11,7 @@ body_class: gallery-page
 <section class="section section--alt">
   <div class="container">
     {% if site.data.gallery and site.data.gallery.size > 0 %}
-    <div class="gallery-grid" aria-label="사진 목록">
+    <div class="gallery-grid" aria-label="Photo list">
       {% for item in site.data.gallery %}
       <article class="gallery-post">
         <a class="gallery-item js-gallery-open"
@@ -28,15 +28,17 @@ body_class: gallery-page
 
           <div class="gallery-meta">
             <div class="gallery-title">{{ item.title }}</div>
+
             {% if item.date %}
             <div class="gallery-date">{{ item.date }}</div>
             {% endif %}
+
             {% if item.caption %}
             <div class="gallery-caption">{{ item.caption }}</div>
             {% endif %}
 
             {% if item.images and item.images.size > 1 %}
-            <div class="gallery-count">사진 {{ item.images.size }}장</div>
+            <div class="gallery-count">{{ item.images.size }} photos</div>
             {% endif %}
           </div>
         </a>
@@ -44,7 +46,7 @@ body_class: gallery-page
       {% endfor %}
     </div>
     {% else %}
-    <p class="lead">아직 등록된 사진이 없습니다. <code>_data/gallery.yml</code>에 항목을 추가하면 자동으로 표시됩니다.</p>
+    <p class="lead">No photos have been added yet. Add items to <code>_data/gallery.yml</code> to display them automatically.</p>
     {% endif %}
   </div>
 </section>
@@ -63,7 +65,7 @@ body_class: gallery-page
      aria-modal="true"
      aria-labelledby="galleryModalTitle">
   <div class="modal-card modal-card--gallery" role="document">
-    <button class="modal-close" type="button" data-gallery-modal-close aria-label="닫기">×</button>
+    <button class="modal-close" type="button" data-gallery-modal-close aria-label="Close">×</button>
 
     <div class="gallery-modal-body">
       <div class="gallery-modal-media">
@@ -76,19 +78,19 @@ body_class: gallery-page
       </div>
 
       <div class="gallery-modal-main">
-        <h2 class="modal-title" id="galleryModalTitle" data-gallery-modal-title>사진</h2>
+        <h2 class="modal-title" id="galleryModalTitle" data-gallery-modal-title>Photo</h2>
         <p class="post-meta" data-gallery-modal-date></p>
         <p class="gallery-caption" data-gallery-modal-caption></p>
         <p class="gallery-count" data-gallery-modal-count></p>
 
         <div class="gallery-modal-actions">
-          <button class="person-more gallery-nav-btn" type="button" data-gallery-prev>이전 사진</button>
-          <button class="person-more gallery-nav-btn" type="button" data-gallery-next>다음 사진</button>
+          <button class="person-more gallery-nav-btn" type="button" data-gallery-prev>Previous photo</button>
+          <button class="person-more gallery-nav-btn" type="button" data-gallery-next>Next photo</button>
           <a class="person-more gallery-open-original"
              data-gallery-open-original
              href="#"
              target="_blank"
-             rel="noopener noreferrer">원본 열기</a>
+             rel="noopener noreferrer">Open original</a>
         </div>
       </div>
     </div>
