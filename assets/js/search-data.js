@@ -31,11 +31,11 @@ ninja.data = [{
             window.location.href = "/Gallery/";
           },
         },{id: "nav-personal",
-          title: "personal",
+          title: "Personal",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/personal/";
+            window.location.href = "/Personal/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
