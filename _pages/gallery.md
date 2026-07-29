@@ -2,7 +2,7 @@
 layout: page
 title: Gallery
 description: My PhD Student Journey 📝
-permalink: /gallery/
+permalink: /Gallery/
 nav: true
 nav_order: 5
 ---
