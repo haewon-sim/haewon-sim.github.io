@@ -1,6 +1,6 @@
 ---
 layout: page
-title: gallery
+title: Gallery
 description: My PhD Student Journey 📝
 permalink: /gallery/
 nav: true
