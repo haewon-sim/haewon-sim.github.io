@@ -28,7 +28,7 @@ ninja.data = [{
           description: "My PhD Student Journey 📝",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/gallery/";
+            window.location.href = "/Gallery/";
           },
         },{id: "nav-personal",
           title: "personal",
