@@ -1,7 +1,7 @@
 ---
 layout: page
-title: personal
-permalink: /personal/
+title: Personal
+permalink: /Personal/
 nav: true
 nav_order: 6
 ---
