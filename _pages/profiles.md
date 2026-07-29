@@ -20,7 +20,7 @@ Outside of research, I enjoy:
   <img src="{{ '/assets/img/matcha_3.jpeg' | relative_url }}" alt="Matcha photo 3" loading="lazy">
   <img src="{{ '/assets/img/matcha_4.jpeg' | relative_url }}" alt="Matcha photo 4" loading="lazy">
   <img src="{{ '/assets/img/matcha_5.jpeg' | relative_url }}" alt="Matcha photo 5" loading="lazy">
-  <img src="{{ '/assets/img/matcha_6.jpeg' | relative_url }}" alt="Matcha photo 5" loading="lazy">
+  <img src="{{ '/assets/img/matcha_6.jpeg' | relative_url }}" alt="Matcha photo 6" loading="lazy">
 </div>
 
 <style>
